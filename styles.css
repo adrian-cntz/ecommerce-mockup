@@ -1,0 +1,86 @@
+
+body{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: black;
+}
+.product ul, li { 
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none }
+
+label{
+    margin-left: 20px;
+}
+.main{
+    background-color: lightgrey;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 20% 1fr ;     
+    grid-template-areas: 
+        "header header"
+        "menu products"         
+        "footer footer";      
+}
+
+.header{
+    align-items: center;
+    background-color:cornflowerblue;
+    color: white;
+    display: flex;
+    font-size: 2em;    
+    grid-area: header;
+    height: 15px;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    grid-area: menu;   
+    padding-top: 15px;
+    padding-bottom: 15px; 
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:start;
+    align-items: center;
+    row-gap: 100px;
+    column-gap: 200px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+  
+}
+
+img{
+    height: 300px;
+    width:  250px;
+    object-fit:cover;
+}
+
+.product{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    text-align: center;
+    
+    
+}
+.footer{
+    align-items: center;
+    display: flex;
+    font-size: 1em;    
+    grid-area: footer;
+    height: 15px;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;    
+    color:white;
+    background-color: black;
+}
